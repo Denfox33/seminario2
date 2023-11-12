@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textSize="25sp"
+            android:text="Entrada 1"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/gui1"
+            android:background="@color/black"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"/>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/icono"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/txt1"
+            android:adjustViewBounds="true"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gui2"
+        app:layout_constraintBottom_toTopOf="@id/gui7"
+      >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/lin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gui2">
+
+                <LinearLayout
+                    android:id="@+id/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/gui2">
+
+
+
+                        <ImageView
+                            android:id="@+id/img3"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:paddingLeft="10dp"
+                            app:srcCompat="@drawable/flecha" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:text="Prueba1 "
+                            android:textSize="30dp"/>
+
+                        <ImageView
+                            android:id="@+id/img7"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+
+                            android:paddingTop="10dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/gui1"
+                            app:layout_constraintTop_toBottomOf="@id/gui2"
+                            app:srcCompat="@drawable/unnamed"
+                                android:layout_gravity="center"
+                            />
+
+
+
+
+                </LinearLayout>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/line5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:elevation="20dp"
+                    android:orientation="horizontal"
+                    app:cardCornerRadius="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/line">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#4085C1"
+                        android:gravity="center"
+                        android:padding="80dp"
+                        android:paddingStart="100dp"
+                        android:paddingEnd="100dp"
+                        android:text="TextView"
+                        android:textColor="@color/white"
+
+                        />
+
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lin">
+
+                <LinearLayout
+                    android:id="@+id/line."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/gui2">
+
+
+
+                        <ImageView
+                            android:id="@+id/img3."
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:paddingLeft="10dp"
+                            app:srcCompat="@drawable/flecha" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:text="Prueba2 "
+                            android:textSize="30dp"
+
+                            />
+                        <ImageView
+                            android:id="@+id/img4"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+
+                            android:paddingTop="10dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/gui1"
+                            app:layout_constraintTop_toBottomOf="@id/gui2"
+                            app:srcCompat="@drawable/unnamed"
+                            android:layout_gravity="center"
+
+                            />
+
+
+
+
+
+                </LinearLayout>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/line5."
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:elevation="20dp"
+                    android:orientation="horizontal"
+                    app:cardCornerRadius="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/line">
+
+                    <TextView
+                        android:id="@+id/textView."
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#4085C1"
+                        android:gravity="center"
+                        android:padding="50dp"
+                        android:paddingStart="100dp"
+                        android:paddingEnd="100dp"
+                        android:text="TextView"
+                        android:textColor="@color/white"
+
+                        />
+
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lin5.1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lin">
+
+                <LinearLayout
+                    android:id="@+id/line.1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/gui2">
+
+
+
+                        <ImageView
+                            android:id="@+id/img3.1"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:paddingLeft="10dp"
+                            app:srcCompat="@drawable/flecha" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:text="Prueba 3 "
+                            android:textSize="30dp"
+
+                            />
+                        <ImageView
+                            android:id="@+id/img4.1"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+
+                            android:paddingTop="10dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/gui1"
+                            app:layout_constraintTop_toBottomOf="@id/gui2"
+                            app:srcCompat="@drawable/unnamed"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            />
+
+
+
+
+
+                </LinearLayout>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/line5.1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:elevation="20dp"
+                    android:orientation="horizontal"
+                    app:cardCornerRadius="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/line">
+
+                    <TextView
+                        android:id="@+id/textView.1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#4085C1"
+                        android:gravity="center"
+                        android:padding="50dp"
+                        android:paddingStart="100dp"
+                        android:paddingEnd="100dp"
+                        android:text="TextView"
+                        android:textColor="@color/white"
+
+                        />
+
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+    <Button
+        android:layout_marginBottom="20dp"
+        android:id="@+id/volver"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="Volver"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/atras"
+        android:onClick="volver"
+        />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gui1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gui2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gui3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gui7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
