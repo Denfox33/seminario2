@@ -70,8 +70,12 @@ class TresEnRayaActivity  : AppCompatActivity() {
         // varaible escribir el resultado
         texto  = findViewById<TextView>(R.id.textView)
 
+        // crear bloqueo de botones para no poder sobre escribir
+
+        // crear una matriz de booleanos para bloquear que el jugador no puede sobre escribir a la maquina
         botton1.setOnClickListener {
             if(partida_fin!=true) {
+
                 if (!partida_fin && fondoComun is ColorDrawable) {
                     botton1.setBackgroundResource(R.drawable.x)
                     boton1 = true
