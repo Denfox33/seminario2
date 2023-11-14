@@ -14,18 +14,6 @@
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.7"/>
 
-    <Button
-        android:id="@+id/volver"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:text="Volver"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/guia2"
-        android:background="@drawable/atras"
-        android:onClick="volver"
-        />
-
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
         android:layout_width="wrap_content"
