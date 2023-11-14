@@ -30,7 +30,7 @@
             android:id="@+id/Raya"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Actividad 1"
+            android:text="· en raya"
             android:onClick="iniciarActividad"/>
 
         <Button

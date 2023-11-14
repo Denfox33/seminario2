@@ -39,7 +39,7 @@
         app:layout_constraintTop_toBottomOf="@+id/Esp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="España"
+        android:text="Francia"
 
         />
 
@@ -80,17 +80,17 @@
         android:gravity="center" />
 
     <Button
-        android:layout_marginBottom="20dp"
         android:id="@+id/volver"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:text="Volver"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/atras"
         android:onClick="volver"
-        />
+        android:text="Volver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -23,7 +23,7 @@ class TresEnRayaActivity  : AppCompatActivity() {
     private lateinit var botton8 : Button
     private lateinit var botton9 : Button
 
-    private var fondoComun: Drawable? = ColorDrawable(ContextCompat.getColor(this, R.color.black))
+    private lateinit var fondoComun: Drawable
 
 
 
@@ -46,7 +46,7 @@ class TresEnRayaActivity  : AppCompatActivity() {
 
         setContentView(R.layout.activity_3_en_raya)
 
-
+        fondoComun = ColorDrawable(ContextCompat.getColor(this, R.color.black))
 
         botton1 = findViewById<Button>(R.id.button1)
         botton2 = findViewById<Button>(R.id.button2)
@@ -171,14 +171,14 @@ class TresEnRayaActivity  : AppCompatActivity() {
 
 
     fun comprobarResultado(){
-        if (botton1.background.constantState == ContextCompat.getDrawable(this, R.drawable.x)?.constantState && botton2.background.constantState == ContextCompat.getDrawable(this, R.drawable.x)?.constantState && botton3.background.constantState == ContextCompat.getDrawable(this, R.drawable.x)?.constantState ||
-            botton4.background.constantState == ContextCompat.getDrawable(this, R.drawable.x)?.constantState && botton5.background.constantState == ContextCompat.getDrawable(this, R.drawable.x)?.constantState && botton6.background.constantState == ContextCompat.getDrawable(this, R.drawable.x)?.constantState ||
-            botton7.background.constantState == ContextCompat.getDrawable(this, R.drawable.x)?.constantState && botton8.background.constantState == ContextCompat.getDrawable(this, R.drawable.x)?.constantState && botton9.background.constantState == ContextCompat.getDrawable(this, R.drawable.x)?.constantState ||
-            botton1.background.constantState == ContextCompat.getDrawable(this, R.drawable.x)?.constantState && botton5.background.constantState == ContextCompat.getDrawable(this, R.drawable.x)?.constantState && botton9.background.constantState == ContextCompat.getDrawable(this, R.drawable.x)?.constantState ||
-            botton3.background.constantState == ContextCompat.getDrawable(this, R.drawable.x)?.constantState && botton5.background.constantState == ContextCompat.getDrawable(this, R.drawable.x)?.constantState && botton7.background.constantState == ContextCompat.getDrawable(this, R.drawable.x)?.constantState ||
-            botton1.background.constantState == ContextCompat.getDrawable(this, R.drawable.x)?.constantState && botton4.background.constantState == ContextCompat.getDrawable(this, R.drawable.x)?.constantState && botton7.background.constantState == ContextCompat.getDrawable(this, R.drawable.x)?.constantState ||
-            botton2.background.constantState == ContextCompat.getDrawable(this, R.drawable.x)?.constantState && botton5.background.constantState == ContextCompat.getDrawable(this, R.drawable.x)?.constantState && botton8.background.constantState == ContextCompat.getDrawable(this, R.drawable.x)?.constantState ||
-            botton3.background.constantState == ContextCompat.getDrawable(this, R.drawable.x)?.constantState && botton6.background.constantState == ContextCompat.getDrawable(this, R.drawable.x)?.constantState && botton9.background.constantState == ContextCompat.getDrawable(this, R.drawable.x)?.constantState){
+        if (botton1.background == ContextCompat.getDrawable(this, R.drawable.x) && botton2.background.constantState == ContextCompat.getDrawable(this, R.drawable.x)?.constantState && botton3.background.constantState == ContextCompat.getDrawable(this, R.drawable.x)?.constantState ||
+            botton4.background == ContextCompat.getDrawable(this, R.drawable.x) && botton5.background.constantState == ContextCompat.getDrawable(this, R.drawable.x)?.constantState && botton6.background.constantState == ContextCompat.getDrawable(this, R.drawable.x)?.constantState ||
+            botton7.background == ContextCompat.getDrawable(this, R.drawable.x) && botton8.background.constantState == ContextCompat.getDrawable(this, R.drawable.x)?.constantState && botton9.background.constantState == ContextCompat.getDrawable(this, R.drawable.x)?.constantState ||
+            botton1.background == ContextCompat.getDrawable(this, R.drawable.x) && botton5.background.constantState == ContextCompat.getDrawable(this, R.drawable.x)?.constantState && botton9.background.constantState == ContextCompat.getDrawable(this, R.drawable.x)?.constantState ||
+            botton3.background == ContextCompat.getDrawable(this, R.drawable.x) && botton5.background.constantState == ContextCompat.getDrawable(this, R.drawable.x)?.constantState && botton7.background.constantState == ContextCompat.getDrawable(this, R.drawable.x)?.constantState ||
+            botton1.background == ContextCompat.getDrawable(this, R.drawable.x) && botton4.background.constantState == ContextCompat.getDrawable(this, R.drawable.x)?.constantState && botton7.background.constantState == ContextCompat.getDrawable(this, R.drawable.x)?.constantState ||
+            botton2.background == ContextCompat.getDrawable(this, R.drawable.x) && botton5.background.constantState == ContextCompat.getDrawable(this, R.drawable.x)?.constantState && botton8.background.constantState == ContextCompat.getDrawable(this, R.drawable.x)?.constantState ||
+            botton3.background == ContextCompat.getDrawable(this, R.drawable.x) && botton6.background.constantState == ContextCompat.getDrawable(this, R.drawable.x)?.constantState && botton9.background.constantState == ContextCompat.getDrawable(this, R.drawable.x)?.constantState){
             texto.text = "Has ganado"
             partida_fin = true
         } else if (botton1.background.constantState == ContextCompat.getDrawable(this, R.drawable.circulo)?.constantState && botton2.background.constantState == ContextCompat.getDrawable(this, R.drawable.circulo)?.constantState && botton3.background.constantState == ContextCompat.getDrawable(this, R.drawable.circulo)?.constantState ||
