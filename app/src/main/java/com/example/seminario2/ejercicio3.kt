@@ -1,5 +1,6 @@
 package com.example.seminario2
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -12,6 +13,7 @@ class ejercicio3 : AppCompatActivity() {
     private lateinit var listView: ListView
     private val textList = mutableListOf<String>()
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ejercicio3)
