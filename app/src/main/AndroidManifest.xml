@@ -19,6 +19,9 @@
             android:name=".maqueta4"
             android:exported="false" />
         <activity
+            android:name=".maqueta1"
+            android:exported="false" />
+        <activity
             android:name=".maqueta3"
             android:exported="false" />
         <activity
